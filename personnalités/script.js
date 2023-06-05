@@ -23,6 +23,7 @@ window.addEventListener('load', () => {
 });
 
 const conteneur = document.querySelector('.container');
+
 const bwImg = new Image();
 const colorImg = new Image();
 bwImg.src = './images/bw-image.jpg';
@@ -87,20 +88,19 @@ partieJessica.insertAdjacentElement('afterend', sectionJessica);
 partieZita.insertAdjacentElement('afterend', sectionZita);
 
 
+// EVENTS ON PICTURE
 
 partieDwayne.addEventListener('click', () => {
     if(sectionDwayne.style.display !== 'none'){
         sectionDwayne.style.display = 'none';
     } else {
         cacherSection();
+        sectionDwayne.classList.add('visible');
         sectionDwayne.style.display = 'block';
+        partieDwayneCouleur.style.display = 'block';
+        conteneur.replaceChild(partieDwayneCouleur, partieDwayne);
     }
 });
-
-if (sectionDwayne.style.display == 'block') {
-    partieDwayneCouleur.style.display = 'block';
-    conteneur.replaceChild(partieDwayneCouleur, partieDwayne);
-}
 
 partieVin.addEventListener('click', () => {
     if(sectionVin.style.display!== 'none'){
@@ -138,6 +138,8 @@ partieZita.addEventListener('click', () => {
     }
 });
 
+
+// EVENTS ON BUTTONS
 
 btnDwayne.addEventListener('click', () => {
     if(sectionDwayne.style.display !== 'none'){
@@ -183,3 +185,6 @@ btnZita.addEventListener('click', () => {
         sectionZita.style.display = 'block';
     }
 });
+
+
+// COLOR IMAGE CONDITION
