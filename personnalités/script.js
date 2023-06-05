@@ -1,8 +1,8 @@
-// const btnDwayne = document.getElementById('btnDwayne');
-// const btnVin = document.getElementById('btnVin');
-// const btnImena = document.getElementById('btnImena');
-// const btnJessica = document.getElementById('btnJessica');
-// const btnZita = document.getElementById('btnZita');
+const btnDwayne = document.getElementById('btn-dwayne');
+const btnVin = document.getElementById('btn-vin');
+const btnImen = document.getElementById('btn-imen');
+const btnJessica = document.getElementById('btn-jessica');
+const btnZita = document.getElementById('btn-zita');
 
 const sectionDwayne = document.getElementById('dwayne');
 const sectionVin = document.getElementById('vin');
@@ -130,6 +130,52 @@ partieJessica.addEventListener('click', () => {
 });
 
 partieZita.addEventListener('click', () => {
+    if(sectionZita.style.display!== 'none'){
+        sectionZita.style.display = 'none';
+    } else {
+        cacherSection();
+        sectionZita.style.display = 'block';
+    }
+});
+
+
+btnDwayne.addEventListener('click', () => {
+    if(sectionDwayne.style.display !== 'none'){
+        sectionDwayne.style.display = 'none';
+    } else {
+        cacherSection();
+        sectionDwayne.style.display = 'block';
+    }
+});
+
+btnVin.addEventListener('click', () => {
+    if(sectionVin.style.display!== 'none'){
+        sectionVin.style.display = 'none';
+    } else {
+        cacherSection();
+        sectionVin.style.display = 'block';
+    }
+});
+
+btnImen.addEventListener('click', () => {
+    if(sectionImen.style.display!== 'none'){
+        sectionImen.style.display = 'none';
+    } else {
+        cacherSection();
+        sectionImen.style.display = 'block';
+    }
+});
+
+btnJessica.addEventListener('click', () => {
+    if(sectionJessica.style.display!== 'none'){
+        sectionJessica.style.display = 'none';
+    } else {
+        cacherSection();
+        sectionJessica.style.display = 'block';
+    }
+});
+
+btnZita.addEventListener('click', () => {
     if(sectionZita.style.display!== 'none'){
         sectionZita.style.display = 'none';
     } else {
