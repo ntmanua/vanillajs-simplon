@@ -10,7 +10,7 @@ const sectionImen = document.getElementById('imen');
 const sectionJessica = document.getElementById('jessica');
 const sectionZita = document.getElementById('zita');
 
-window.addEventListener('load', (event) => {
+window.addEventListener('load', () => {
     sectionDwayne.style.display='none';
     sectionVin.style.display='none';
     sectionImen.style.display='none';
@@ -47,10 +47,49 @@ partieImen = document.querySelector('.partie2');
 partieJessica = document.querySelector('.partie3');
 partieZita = document.querySelector('.partie4');
 
+partieDwayne.insertAdjacentElement('afterend', sectionDwayne);
+partieVin.insertAdjacentElement('afterend', sectionVin);
+partieImen.insertAdjacentElement('afterend', sectionImen);
+partieJessica.insertAdjacentElement('afterend', sectionJessica);
+partieZita.insertAdjacentElement('afterend', sectionZita);
+
+
 partieDwayne.addEventListener('click', () => {
-    if(sectionDwayne.display != 'none'){
+    if(sectionDwayne.style.display !== 'none'){
         sectionDwayne.style.display = 'none';
     } else {
         sectionDwayne.style.display = 'block';
+    }
+});
+
+partieVin.addEventListener('click', () => {
+    if(sectionVin.style.display!== 'none'){
+        sectionVin.style.display = 'none';
+    } else {
+        sectionVin.style.display = 'block';
+    }
+});
+
+partieImen.addEventListener('click', () => {
+    if(sectionImen.style.display!== 'none'){
+        sectionImen.style.display = 'none';
+    } else {
+        sectionImen.style.display = 'block';
+    }
+});
+
+partieJessica.addEventListener('click', () => {
+    if(sectionJessica.style.display!== 'none'){
+        sectionJessica.style.display = 'none';
+    } else {
+        sectionJessica.style.display = 'block';
+    }
+});
+
+partieZita.addEventListener('click', () => {
+    if(sectionZita.style.display!== 'none'){
+        sectionZita.style.display = 'none';
+    } else {
+        sectionZita.style.display = 'block';
     }
 });

@@ -98,7 +98,9 @@ button{
     justify-content: center;
 }
 
-
+div {
+    transition: width 2s linear 1s;
+  }
 
 
 
