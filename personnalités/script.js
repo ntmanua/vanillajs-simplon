@@ -166,13 +166,12 @@ bwImg.onload = () => {
         }
     });
 
-    document.body.addEventListener('click', etatInitial(), true);
-
     // EVENTS ON BUTTONS
 
     btnDwayne.addEventListener('click', () => {
         if(sectionDwayne.style.display !== 'none'){
             sectionDwayne.style.display = 'none';
+            partieDwayneCouleur.replaceWith(partieDwayne);
         } else {
             cacherSection();
             cacherCouleur(tableImage, tableImageCouleur);
@@ -185,6 +184,7 @@ bwImg.onload = () => {
     btnVin.addEventListener('click', () => {
         if(sectionVin.style.display!== 'none'){
             sectionVin.style.display = 'none';
+            partieVinCouleur.replaceWith(partieVin);
         } else {
             cacherSection();
             cacherCouleur(tableImage, tableImageCouleur);
@@ -197,6 +197,7 @@ bwImg.onload = () => {
     btnImen.addEventListener('click', () => {
         if(sectionImen.style.display!== 'none'){
             sectionImen.style.display = 'none';
+            partieImenCouleur.replaceWith(partieImen);
         } else {
             cacherSection();
             cacherCouleur(tableImage, tableImageCouleur);
@@ -209,6 +210,7 @@ bwImg.onload = () => {
     btnJessica.addEventListener('click', () => {
         if(sectionJessica.style.display!== 'none'){
             sectionJessica.style.display = 'none';
+            partieJessicaCouleur.replaceWith(partieJessica);
         } else {
             cacherSection();
             cacherCouleur(tableImage, tableImageCouleur);
@@ -221,6 +223,7 @@ bwImg.onload = () => {
     btnZita.addEventListener('click', () => {
         if(sectionZita.style.display!== 'none'){
             sectionZita.style.display = 'none';
+            partieZitaCouleur.replaceWith(partieZita);
         } else {
             cacherSection();
             cacherCouleur(tableImage, tableImageCouleur);
