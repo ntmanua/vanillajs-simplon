@@ -59,17 +59,20 @@ for (let i = 0; i < 5; i++) {
     conteneur.appendChild(partie);
 }
 
-const partieDwayne = document.querySelector('.partie0');
-const partieVin = document.querySelector('.partie1');
-const partieImen = document.querySelector('.partie2');
-const partieJessica = document.querySelector('.partie3');
-const partieZita = document.querySelector('.partie4');
+partieDwayne = document.querySelector('.partie0');
+partieVin = document.querySelector('.partie1');
+partieImen = document.querySelector('.partie2');
+partieJessica = document.querySelector('.partie3');
+partieZita = document.querySelector('.partie4');
 
-const partieDwayneCouleur = document.querySelector('.partieCouleur0');
-const partieVinCouleur = document.querySelector('.partieCouleur1');
-const partieImenCouleur = document.querySelector('.partieCouleur2');
-const partieJessicaCouleur = document.querySelector('.partieCouleur3');
-const partieZitaCouleur = document.querySelector('.partieCouleur4');
+partieDwayneCouleur = document.querySelector('.partieCouleur0');
+partieVinCouleur = document.querySelector('.partieCouleur1');
+partieImenCouleur = document.querySelector('.partieCouleur2');
+partieJessicaCouleur = document.querySelector('.partieCouleur3');
+partieZitaCouleur = document.querySelector('.partieCouleur4');
+
+
+
 
 function cacherPartieCouleur() {
     partieDwayneCouleur.style.display='none';
@@ -87,18 +90,28 @@ partieImen.insertAdjacentElement('afterend', sectionImen);
 partieJessica.insertAdjacentElement('afterend', sectionJessica);
 partieZita.insertAdjacentElement('afterend', sectionZita);
 
+tableImage = [partieDwayne, partieVin, partieImen, partieJessica, partieZita];
+tableImageCouleur = [partieDwayneCouleur, partieVinCouleur, partieImenCouleur, partieJessicaCouleur, partieZitaCouleur];
+
+function cacherCouleur(table1, table2) {
+    for (let i = 0; i < table1.length; i++) {
+        if (table2[i].style.display === 'block') {
+            table1[i].style.display = 'block';
+            table2[i].replaceWith(table1[i]);
+        }
+    }
+}
 
 // EVENTS ON PICTURE
-
 partieDwayne.addEventListener('click', () => {
     if(sectionDwayne.style.display !== 'none'){
-        sectionDwayne.style.display = 'none';
+            sectionDwayne.style.display = 'none';
     } else {
         cacherSection();
-        sectionDwayne.classList.add('visible');
+        cacherCouleur(tableImage, tableImageCouleur);
         sectionDwayne.style.display = 'block';
         partieDwayneCouleur.style.display = 'block';
-        conteneur.replaceChild(partieDwayneCouleur, partieDwayne);
+        partieDwayne.replaceWith(partieDwayneCouleur);
     }
 });
 
@@ -107,7 +120,10 @@ partieVin.addEventListener('click', () => {
         sectionVin.style.display = 'none';
     } else {
         cacherSection();
+        cacherCouleur(tableImage, tableImageCouleur);
         sectionVin.style.display = 'block';
+        partieVinCouleur.style.display = 'block';
+        partieVin.replaceWith(partieVinCouleur);
     }
 });
 
@@ -116,7 +132,10 @@ partieImen.addEventListener('click', () => {
         sectionImen.style.display = 'none';
     } else {
         cacherSection();
+        cacherCouleur(tableImage, tableImageCouleur);
         sectionImen.style.display = 'block';
+        partieImenCouleur.style.display = 'block';
+        partieImen.replaceWith(partieImenCouleur);
     }
 });
 
@@ -125,7 +144,10 @@ partieJessica.addEventListener('click', () => {
         sectionJessica.style.display = 'none';
     } else {
         cacherSection();
+        cacherCouleur(tableImage, tableImageCouleur);
         sectionJessica.style.display = 'block';
+        partieJessicaCouleur.style.display = 'block';
+        partieJessica.replaceWith(partieJessicaCouleur);
     }
 });
 
@@ -134,7 +156,10 @@ partieZita.addEventListener('click', () => {
         sectionZita.style.display = 'none';
     } else {
         cacherSection();
+        cacherCouleur(tableImage, tableImageCouleur);
         sectionZita.style.display = 'block';
+        partieZitaCouleur.style.display = 'block';
+        partieZita.replaceWith(partieZitaCouleur);
     }
 });
 
@@ -146,7 +171,10 @@ btnDwayne.addEventListener('click', () => {
         sectionDwayne.style.display = 'none';
     } else {
         cacherSection();
+        cacherCouleur(tableImage, tableImageCouleur);
         sectionDwayne.style.display = 'block';
+        partieDwayneCouleur.style.display = 'block';
+        partieDwayne.replaceWith(partieDwayneCouleur);
     }
 });
 
@@ -155,7 +183,10 @@ btnVin.addEventListener('click', () => {
         sectionVin.style.display = 'none';
     } else {
         cacherSection();
+        cacherCouleur(tableImage, tableImageCouleur);
         sectionVin.style.display = 'block';
+        partieVinCouleur.style.display = 'block';
+        partieVin.replaceWith(partieVinCouleur);
     }
 });
 
@@ -164,7 +195,10 @@ btnImen.addEventListener('click', () => {
         sectionImen.style.display = 'none';
     } else {
         cacherSection();
+        cacherCouleur(tableImage, tableImageCouleur);
         sectionImen.style.display = 'block';
+        partieImenCouleur.style.display = 'block';
+        partieImen.replaceWith(partieImenCouleur);
     }
 });
 
@@ -173,7 +207,10 @@ btnJessica.addEventListener('click', () => {
         sectionJessica.style.display = 'none';
     } else {
         cacherSection();
+        cacherCouleur(tableImage, tableImageCouleur);
         sectionJessica.style.display = 'block';
+        partieJessicaCouleur.style.display = 'block';
+        partieJessica.replaceWith(partieJessicaCouleur);
     }
 });
 
@@ -182,6 +219,11 @@ btnZita.addEventListener('click', () => {
         sectionZita.style.display = 'none';
     } else {
         cacherSection();
+        cacherCouleur(tableImage, tableImageCouleur);
         sectionZita.style.display = 'block';
+        partieZitaCouleur.style.display = 'block';
+        partieZita.replaceWith(partieZitaCouleur);
     }
 });
+
+
