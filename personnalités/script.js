@@ -31,7 +31,6 @@ bwImg.onload = () => {
 
     const largeurPartie = bwImg.width/5;
 
-
     for (let i = 0; i < 5; i++) {
         const partie = document.createElement('div');
 
