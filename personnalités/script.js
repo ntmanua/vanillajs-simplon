@@ -59,17 +59,17 @@ for (let i = 0; i < 5; i++) {
     conteneur.appendChild(partie);
 }
 
-partieDwayne = document.querySelector('.partie0');
-partieVin = document.querySelector('.partie1');
-partieImen = document.querySelector('.partie2');
-partieJessica = document.querySelector('.partie3');
-partieZita = document.querySelector('.partie4');
+const partieDwayne = document.querySelector('.partie0');
+const partieVin = document.querySelector('.partie1');
+const partieImen = document.querySelector('.partie2');
+const partieJessica = document.querySelector('.partie3');
+const partieZita = document.querySelector('.partie4');
 
-partieDwayneCouleur = document.querySelector('.partieCouleur0');
-partieVinCouleur = document.querySelector('.partieCouleur1');
-partieImenCouleur = document.querySelector('.partieCouleur2');
-partieJessicaCouleur = document.querySelector('.partieCouleur3');
-partieZitaCouleur = document.querySelector('.partieCouleur4');
+const partieDwayneCouleur = document.querySelector('.partieCouleur0');
+const partieVinCouleur = document.querySelector('.partieCouleur1');
+const partieImenCouleur = document.querySelector('.partieCouleur2');
+const partieJessicaCouleur = document.querySelector('.partieCouleur3');
+const partieZitaCouleur = document.querySelector('.partieCouleur4');
 
 function cacherPartieCouleur() {
     partieDwayneCouleur.style.display='none';
@@ -185,6 +185,3 @@ btnZita.addEventListener('click', () => {
         sectionZita.style.display = 'block';
     }
 });
-
-
-// COLOR IMAGE CONDITION
