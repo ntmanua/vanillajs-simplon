@@ -39,18 +39,16 @@ section{
     width: 250px;
     height: 500px;
     border: 1px black solid;
-    animation: translate 0.3s ease-in-out;
+    animation: translateX 0.5s ease-out;
 }
-@keyframes translate {
+@keyframes translateX {
     0% {
-      transform: translateX(100px);
+      transform: translateX(-130px);
     }
     100% {
       transform: translateX(0px);
     }
   }
-
-
 
 section h1{
     text-align: center;
