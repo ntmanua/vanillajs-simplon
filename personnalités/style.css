@@ -37,7 +37,7 @@ section{
     z-index: -1;
     background-color:  #fefee2;
     width: 250px;
-    height: 500px;
+    height: 499px;
     border: 1px black solid;
     animation: translateX 0.5s ease-out;
 }
