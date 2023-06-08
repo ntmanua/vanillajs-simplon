@@ -4,6 +4,7 @@ bwImg.src = './images/bw-image.jpg';
 const colorImg = new Image();
 colorImg.src = './images/color-image.jpg';
 
+
 bwImg.onload = () => {
 
     const conteneur = document.querySelector('.container');
@@ -29,6 +30,7 @@ bwImg.onload = () => {
     }
     cacherSection();
 
+    //DECOUPAGE DES IMAGES
     const largeurPartie = bwImg.width/5;
 
     for (let i = 0; i < 5; i++) {
@@ -104,7 +106,7 @@ bwImg.onload = () => {
         }
     }
 
-    // EVENTS ON PICTURE
+    //EVENTS ON PICTURES
     partieDwayne.addEventListener('click', () => {
         if(sectionDwayne.style.display !== 'none'){
                 sectionDwayne.style.display = 'none';
@@ -165,7 +167,7 @@ bwImg.onload = () => {
         }
     });
 
-    // EVENTS ON BUTTONS
+    //EVENTS ON BUTTONS
     btnDwayne.addEventListener('click', () => {
         if(sectionDwayne.style.display !== 'none'){
             sectionDwayne.style.display = 'none';

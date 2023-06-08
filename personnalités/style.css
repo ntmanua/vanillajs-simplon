@@ -105,27 +105,27 @@ button:hover{
 }
 
 #partie0:hover{
-    transform: translateY(-30px);
+    transform: translateY(-20px);
     cursor: pointer;
 }
 
 #partie1:hover{
-    transform: translateY(-30px);
+    transform: translateY(-20px);
     cursor: pointer;
 }
 
 #partie2:hover{
-    transform: translateY(-30px);
+    transform: translateY(-20px);
     cursor: pointer;
 }
 
 #partie3:hover{
-    transform: translateY(-30px);
+    transform: translateY(-20px);
     cursor: pointer;
 }
 
 #partie4:hover{
-    transform: translateY(-30px);
+    transform: translateY(-20px);
     cursor: pointer;
 }
 
