@@ -166,7 +166,6 @@ bwImg.onload = () => {
     });
 
     // EVENTS ON BUTTONS
-
     btnDwayne.addEventListener('click', () => {
         if(sectionDwayne.style.display !== 'none'){
             sectionDwayne.style.display = 'none';

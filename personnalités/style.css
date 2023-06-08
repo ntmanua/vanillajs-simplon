@@ -104,11 +104,30 @@ button:hover{
     justify-content: center;
 }
 
+#partie0:hover{
+    transform: translateY(-30px);
+    cursor: pointer;
+}
 
+#partie1:hover{
+    transform: translateY(-30px);
+    cursor: pointer;
+}
 
+#partie2:hover{
+    transform: translateY(-30px);
+    cursor: pointer;
+}
 
+#partie3:hover{
+    transform: translateY(-30px);
+    cursor: pointer;
+}
 
-
+#partie4:hover{
+    transform: translateY(-30px);
+    cursor: pointer;
+}
 
 
 
